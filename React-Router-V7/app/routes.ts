@@ -6,7 +6,13 @@ export default [
   route('/post/:postId', 'routes/post.tsx'),
 
   // Nested routes
-  route('dashboard', 'routes/Dashboard.tsx', [
+  // route('dashboard', 'routes/Dashboard.tsx', [
+  //   route('user', 'routes/UserInfo.tsx'),
+  //   route('finances', 'routes/Finances.tsx'),
+  // ])
+
+  // layout
+  layout('./routes/Dashboard.tsx', [
     route('user', 'routes/UserInfo.tsx'),
     route('finances', 'routes/Finances.tsx'),
   ])
