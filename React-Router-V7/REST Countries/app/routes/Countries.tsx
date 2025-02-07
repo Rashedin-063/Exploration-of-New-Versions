@@ -12,10 +12,15 @@ const Countries = ({ loaderData }: Route.ComponentProps) => {
   
   return (
     <div>
+      <h2>Countries</h2>
       <ul>
-        {loaderData.map((country) => (
+        {loaderData?.map((country: any, key: number) => (
           <li key={country.alpha3Code}>
-            <Link>{country.name.common}</Link>
+            <Link to={`/countries/${country.name.common}`}>{country.name.common}</Link>
+            <div className='text-gray-600 text-sm mt-1'>
+              Region: {country.region} <br />
+              Population: {country.population.toLocaleString()}
+            </div>
           </li>
         ))}
       </ul>
