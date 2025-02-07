@@ -2,15 +2,15 @@ import { NavLink } from 'react-router';
 
 const Nav = () => {
   return (
-    <header className='w-full px-8 text-gray-700 bg-white shadow-sm'>
-      <div className='container flex flex-col md:flex-row items-center justify-between py-5 mx-auto max-w-7xl'>
-        <div className='flex flex-col md:flex-row items-center'>
+    <header className='w-full px-8 lg:px-24 xl:px-48 text-gray-700 bg-white shadow-sm'>
+      <div className='container flex items-center justify-between py-8 '>
+        <div className='w-full flex flex-col md:flex-row items-center justify-between'>
           <NavLink to='/' className='flex items-center mb-5 md:mb-0'>
-            <span className='text-xl font-black text-gray-900 select-none'>
-              REST<span className='text-indigo-600'>Explorer</span>
+            <span className='text-3xl font-black text-gray-900 select-none'>
+              REST<span className='text-indigo-600 ml-1'>Explorer</span>
             </span>
           </NavLink>
-          <nav className='flex flex-wrap items-center ml-0 md:ml-8 md:border-l md:pl-8'>
+          <nav className='flex gap-4 flex-wrap items-center text-lg font-semibold'>
             <NavLink
               to='/'
               end
