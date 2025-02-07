@@ -3,7 +3,7 @@ const About = () => {
     <div className='py-16 bg-white'>
       <div className='container mx-auto px-4 max-w-4xl'>
         <h1 className='text-4xl font-extrabold text-gray-900 mb-6 text-center'>
-          About This Website
+          About This <span className="text-indigo-600">Website</span>
         </h1>
         <p className='text-xl text-gray-700 leading-relaxed mb-4'>
           This website uses the{' '}
