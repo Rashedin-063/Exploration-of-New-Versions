@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router';
 
-export default function Navbar() {
+const Nav = () => {
   return (
     <header className='w-full px-8 text-gray-700 bg-white shadow-sm'>
       <div className='container flex flex-col md:flex-row items-center justify-between py-5 mx-auto max-w-7xl'>
@@ -36,3 +36,4 @@ export default function Navbar() {
     </header>
   );
 }
+export default Nav
