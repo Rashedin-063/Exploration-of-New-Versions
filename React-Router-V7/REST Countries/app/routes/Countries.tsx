@@ -54,11 +54,11 @@ const Countries = ({ loaderData }: Route.ComponentProps) => {
         {filteredCountries.length === 0 ? (
           <div> No countries match your filters. </div>
         ) : (
-          <ul className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6'>
+          <ul className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 text-center'>
             {filteredCountries.map((country: any) => (
               <li
                 key={country.cca3}
-                className='bg-white border border-gray-200 rounded-xl p-4 shadow hover:shadow-lg transition'
+                className='bg-white border border-gray-200 rounded-xl p-4 lg:p-6 shadow hover:shadow-lg transition'
               >
                 <Link
                   to={`/countries/${country.name.common}`}
