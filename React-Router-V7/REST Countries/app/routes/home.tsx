@@ -17,11 +17,11 @@ export default function Home() {
              <div className='space-y-6 sm:max-w-md lg:max-w-lg'>
                <h1 className='text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl'>
                  <span className='block xl:inline'>Explore Countries with</span>
-                 <span className='block text-indigo-600 xl:inline'>
+                 <span className='block text-indigo-600 xl:inline ml-2'>
                    Real-Time Data
                  </span>
                </h1>
-               <p className='mx-auto text-base text-gray-500 sm:max-w-md lg:text-xl'>
+               <p className=' text-base text-gray-500 sm:max-w-md lg:text-xl'>
                  Discover details about every country around the world – from
                  capitals to regions!
                </p>
@@ -47,7 +47,7 @@ export default function Home() {
                  </Link>
                  <Link
                    to='/about'
-                   className='flex items-center px-6 py-3 text-gray-500 bg-gray-100 rounded-md hover:bg-gray-200 hover:text-gray-600'
+                   className='flex items-center px-6 py-3 text-gray-500 bg-gray-100 rounded-md hover:bg-gray-300 border hover:text-gray-600'
                  >
                    Learn More
                  </Link>
