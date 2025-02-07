@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import type { Route } from './+types/countries';
+
 import { Link } from 'react-router';
+import type { Route } from './+types/Countries';
 
 export async function clientLoader() {
   const res = await fetch('https://restcountries.com/v3.1/all');
