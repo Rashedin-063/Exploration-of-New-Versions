@@ -50,24 +50,30 @@ const Countries = ({ loaderData }: Route.ComponentProps) => {
           <option value='oceania'>Oceania</option>
         </select>
       </div>
-      <div className='grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 lg:gap-6 mt-8'>
-        {filteredCountries.map((country: any, key: number) => (
-          <div
-            key={country.alpha3Code}
-            className=' border p-6 rounded-lg text-center'
-          >
-            <Link
-              to={`/countries/${country.name.common}`}
-              className='text-lg font-semibold my-2'
-            >
-              {country.name.common}
-            </Link>
-            <div className='text-gray-600 text-sm mt-1'>
-              Region: {country.region} <br />
-              Population: {country.population.toLocaleString()}
-            </div>
-          </div>
-        ))}
+      <div className=' mt-8'>
+        {filteredCountries.length === 0 ? (
+          <div> No countries match your filters. </div>
+        ) : (
+          <ul className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6'>
+            {filteredCountries.map((country: any) => (
+              <li
+                key={country.cca3}
+                className='bg-white border border-gray-200 rounded-xl p-4 shadow hover:shadow-lg transition'
+              >
+                <Link
+                  to={`/countries/${country.name.common}`}
+                  className='text-indigo-600 hover:underline text-lg font-semibold'
+                >
+                  {country.name.common}
+                </Link>
+                <div className='text-gray-600 text-sm mt-1'>
+                  Region: {country.region} <br />
+                  Population: {country.population.toLocaleString()}
+                </div>
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
     </div>
   );
