@@ -7,7 +7,7 @@ const Nav = () => {
         <div className='w-full flex flex-col md:flex-row items-center justify-between'>
           <NavLink to='/' className='flex items-center mb-5 md:mb-0'>
             <span className='text-3xl font-black text-gray-900 select-none'>
-              REST<span className='text-indigo-600 ml-1'>Explorer</span>
+              REST<span className='text-indigo-600 ml-1'>Countries</span>
             </span>
           </NavLink>
           <nav className='flex gap-4 flex-wrap items-center text-lg font-semibold'>
