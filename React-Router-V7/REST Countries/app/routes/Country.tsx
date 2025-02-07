@@ -27,7 +27,7 @@ const Country = ({loaderData}: Route.ComponentProps) => {
 
   return (
     <div className='p-6 grid grid-cols-1 md:grid-cols-2 gap-8 justify-center max-w-2xl mx-auto items-center mt-36'>
-      <div className='flex flex-col gap-4'>
+      <div className='flex flex-col gap-4 bg-white shadow-sm rounded-md hover:shadow-lg transition duration-150 ease-in p-4'>
         <h2 className='text-3xl font-bold text-gray-900'>{country.name}</h2>
         <div className='space-y-2 text-gray-700'>
           <p>
@@ -54,7 +54,7 @@ const Country = ({loaderData}: Route.ComponentProps) => {
         <div className='flex justify-center items-center'>
           <img
             src={country.flagUrl}
-            className='w-56 h-auto border rounded shadow-lg'
+            className=' h-auto border rounded shadow-lg'
           />
         </div>
       )}
